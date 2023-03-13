@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+<div th:insert="fragments/topmenu">
+
+</div>
+    <h1>All my items</h1>
+    <p th:each="item :${items}">
+        <span th:text="${item.name}"/>
+        <span th:text="${item.price}"/>
+
+    </p>
+</body>
+</html>
